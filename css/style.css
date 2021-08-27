@@ -88,7 +88,7 @@
 .buttons .exit{
 	outline: none;
 	border:none;
-	padding: 4px 12px;
+	padding: 8px 12px;
 	color: #fff;
 	background-color: #34495e;
 	margin-right: 15px;
@@ -100,7 +100,7 @@
 .buttons .continue, .nextBtn{
 	outline: none;
 	border:none;
-	padding: 6px 18px;
+	padding: 8px 18px;
 	color: #fff;
 	background-color: #007bff;
 	margin-right: 15px;
@@ -110,6 +110,28 @@
 	letter-spacing: 1px;
 	text-shadow: 0px 2px 5px rgba(0, 0, 0,0.2);
 }
+
+.nextBtn{
+	display: none;
+	outline: none;
+	border:none;
+	padding: 8px 18px;
+	color: #fff;
+	background-color: #007bff;
+	margin-right: 15px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0,0.1);
+	border-radius: 5px;
+	transition: .3s;
+	letter-spacing: 1px;
+	text-shadow: 0px 2px 5px rgba(0, 0, 0,0.2);
+}
+
+
+
+
+
+
+
 
 .buttons .continue:hover{
 	background: #4834d4;	
@@ -165,7 +187,7 @@ font-size: 18px;
 	width: 40px;
 	background-color:#34495e ;
 	color: white;
-	font-weight: bold;
+	
 	padding: 4px 8px;
 	margin-top: 15px;
 	border-radius: 4px;
@@ -259,6 +281,7 @@ section .optionList .option:hover{
     pointer-events: none;
 }
 
+
 /* corect incorrect disabled */
 
 
@@ -280,21 +303,23 @@ section .optionList .option:hover{
 
 /* display Block section */
 
-.infoBox.active{
+.infoBox.active,
+.quizBox.showQbox
+{
 	opacity: 1;
-	pointer-events: auto;
+    pointer-events:auto;
+    z-index: 5;	
+    transform: translate(-50%, -50%) scale(1);
+
+}
+.result_box.resActive{
+	opacity: 1;
+    pointer-events:auto;
+    z-index: 5;	
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
-.quizBox.showQbox{
-	opacity: 1;
-	pointer-events: auto;
-}
 
-.result_box.resHide{
-	opacity: 1;
-	pointer-events: auto;
-	transition: all 0.3s ease;
-}
 
 /* end display block section */
 
@@ -315,6 +340,9 @@ section .optionList .option:hover{
 	.quizBox{
 		width: 380px;
 	}
+
+
+
 
 }
 
@@ -388,8 +416,7 @@ h5,p{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    transform: translate(-50%, -50%) scale(0.9);
-  
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -437,6 +464,7 @@ h5,p{
     transition: all 0.3s ease;
 }
 
+
 .buttons button.restart{
     color: #fff;
     background: #007bff;
@@ -456,6 +484,13 @@ h5,p{
     background: #007bff;
 }
 
+.time_line{
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
 
 
 

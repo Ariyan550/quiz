@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 
 <section class="quizSection"> 
 <div class="container"> 
@@ -36,8 +36,6 @@ some rules of the quiz
 <div class="info">3. You can't select any option once time goes off. </div>
 <div class="info">4. You can't exit from the Quiz while you're playing. </div>
 <div class="info">5. You'll get points on the basis of your correct answers. </div>
-
-
 </div>
 
 <div class="buttons"> 
@@ -47,57 +45,56 @@ some rules of the quiz
 
 </div>
 
-
 <section class="quizBox">
-
 	<div class="quizHeader"> 
 		<h2>Awesome quiz application</h2>
 		<div class="time"> 
-			<h4>Time Left <span>04</span></h4>
+			<h4><span class="timeLeft">Time Left</span> <span class="time_sec">15</span></h4>
 		</div>
-		<div class="timeLine"></div>
+		<div class="time_line"></div>
 	</div>
 	
 	<!-- que text -->
 	<section>
 		<div class="queText">
-			<span>What does html stand for?</span>
+		
 		</div>
 
 		<div class="optionList"> 
 
-			<div class="option"> 
+
+			<!-- <div class="option"> 
 				<span>Hipertex preprosesor</span>
 				<div class="rightQue"><i class="fa fa-check"></i></div>
 			</div>
+
 
 			<div class="option"> 
 				<span>hypertec markup languese</span>
 				<div class="wrongQue"><i class="fa fa-times"></i></div>
 			</div>
 
+
 				<div class="option"> 
 				<span>cascading style shit</span>
 				</div>
 
+
 				<div class="option"> 
 				<span>transfer protocal</span>
-				</div>
+				</div> -->
 
 
 		</div>
-
 	</section>
-
-
 	<div class="quizBoxFooter"> 
 		<div class="totalQue"> 
-			<h4><span class="spanOne">2</span>of<span class="spanTwo">5</span>questions</h4>
+			<!-- 
+			<h4><span class="spanOne">2</span>of<span class="spanTwo">5</span>questions</h4> -->
+
 		</div>
 		<button class="nextBtn">Next</button>
 	</div>
-
-
 
 </section>
 
@@ -111,45 +108,21 @@ some rules of the quiz
         </div>
         <div class="complete_text">You've completed the Quiz!</div>
         <div class="score_text">
-            <span>and sorry😢 you got only <p>2</p>out of <p>5</p> </span>
+
+            <span>and sorry😢 you got only <p>2</p>out of 
+           <p>5</p> </span>
+       
         </div>
         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
+       
             <button class="quit">Quit Quiz</button>
         </div>
     </div>
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
 
 </div>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <footer class="footerSection">
 	<div class="container">
@@ -175,31 +148,14 @@ some rules of the quiz
 
 
 
+<audio class="audioOne">
+	<source src="right.mp3" type="audio/mp3"/>
+</audio>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<audio class="audioTwo">
+	<source src="wrong.mp3" type="audio/mp3"/>
+</audio>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -208,7 +164,7 @@ some rules of the quiz
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-	<script src="js/qdatas.js"></script>
+	<script src="js/questions.js"></script>
 	<script src="js/script.js"></script>	
 </body>
 </html>
