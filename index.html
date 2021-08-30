@@ -14,6 +14,60 @@
 
 
 <section class="quizSection"> 
+
+	<nav class="navSection"> 
+		<div class="topSection">
+			<h2>Quiz App</h2>
+
+		<ul>
+			<li><button onclick="setting()" class="cogIcon"><i class="fa fa-cog"></i></button></li>
+		</ul>
+		
+		</div>
+
+		<div class="sideBar">
+
+			<div class="setalldiv">
+
+				<div class="back">
+					<button onclick="back()"><i class="fa fa-long-arrow-left"></i> Back</button>
+					
+				</div>
+
+				<div class="sideBarContent"> 
+
+				<ul class="listContent">
+
+					<li><a onclick="darkmode()" href="#"><i class="fa fa-moon-o"></i>Dark Mode</a></li>
+					
+					<li><a onclick="timer()" href="#"><i class="fa fa-clock-o"></i> Set Timer</a></li>
+
+				</ul class=''>
+
+				<div class="darkMode"> 
+					<button>on off</button>
+
+				</div>
+
+
+
+			 </div>
+
+
+		</div>		
+			
+
+
+
+
+
+
+		</div>
+
+	</nav>
+
+
+
 <div class="container"> 
 <div class="row"> 
 
@@ -165,6 +219,43 @@ some rules of the quiz
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 	<script src="js/questions.js"></script>
-	<script src="js/script.js"></script>	
+	<script src="js/script.js"></script>
+
+
+	<script> 
+
+		let sideBar =document.querySelector('.sideBar');
+		let darkMode =document.querySelector('.darkMode');
+		let sideBarContent =document.querySelector('.listContent');
+		let backBtn =document.querySelector('.back');
+
+
+
+		function setting(){
+			sideBar.classList.toggle('activesideBar');
+		}
+
+		function back(){
+			darkMode.classList.remove('activedMode');
+			backBtn.style.display='none';
+			sideBarContent.style.display='block';
+		}
+
+
+		// dark mode enable
+
+		function darkmode(){
+			darkMode.classList.toggle('activedMode');
+			sideBarContent.style.display='none';
+			backBtn.style.display='block';
+
+		}
+
+
+
+
+
+
+	</script>	
 </body>
 </html>
