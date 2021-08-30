@@ -7,12 +7,23 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+
 .back{
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	display: none;
+	opacity: 0;
+	pointer-events: none;
+	transform: scale(0.8);
+	transition: all .3s ease-in-out;
 }
+
+.backActive{
+	opacity: 1;
+	pointer-events: auto;
+	transform:scale(1);
+}
+
 
 .back button{
 	outline: none;
@@ -67,7 +78,7 @@
 
 .darkMode{
 	width: 230px;
-	height: 380px;
+	height: 350px;
 	padding: 10px;
 	background-color: #6c5ce7;
 	position: absolute;
@@ -93,7 +104,7 @@
 }
 
 .sideBar ul li{
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .sideBar ul li a i:before{
@@ -310,6 +321,7 @@ h2{
 .quizHeader h2{
 font-weight: bold;
 font-size: 18px;
+color: black;
 }
 
 .time{
@@ -482,7 +494,7 @@ section .optionList .option:hover{
 		width: 380px;
 	}
 
-
+	
 
 
 }
@@ -634,7 +646,18 @@ h5,p{
 }
 
 
+h1{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-weight: bold;
+	text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	letter-spacing: 1px;	
 
+}
 
 
 

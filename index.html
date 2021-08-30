@@ -39,15 +39,36 @@
 				<ul class="listContent">
 
 					<li><a onclick="darkmode()" href="#"><i class="fa fa-moon-o"></i>Dark Mode</a></li>
-					
+					<hr>
 					<li><a onclick="timer()" href="#"><i class="fa fa-clock-o"></i> Set Timer</a></li>
+					<hr>
+
+					<li><a href="#"><i class="fa fa-font"></i>Change Font</a></li>
+					<hr>
+
+					<li><a href="#"><i class="fa fa-paint-brush"></i>Color</a></li>
+					<hr>
+
+					<li><a href="#"><i class="fa fa-expand"></i>Resize</a></li>
+
+					<hr>
+					<li><a href="#"><i class="fa fa-edit"></i>Display YourName</a></li>
+					<hr>
+					<li><a href="#"><i class="fa fa-question-circle"></i>About</a></li>
 
 				</ul class=''>
 
-				<div class="darkMode"> 
-					<button>on off</button>
+					<!-- darkMode -->
 
+				<div class="darkMode"> 
+
+					
+					<span>Dark Mode v3.0</span>
 				</div>
+
+
+
+
 
 
 
@@ -72,8 +93,8 @@
 <div class="row"> 
 
 <!-- start quiz button -->
-
-<div class="startBtn"> <button class="start">Start Quiz</button></div>
+<h1>Hello😊 Ariyan Rumi</h1>
+<div class="startBtn"><button class="start">Start Quiz</button></div>
 
 <!-- quiz info box -->
 
@@ -237,7 +258,8 @@ some rules of the quiz
 
 		function back(){
 			darkMode.classList.remove('activedMode');
-			backBtn.style.display='none';
+			
+			backBtn.classList.remove('backActive');
 			sideBarContent.style.display='block';
 		}
 
@@ -247,7 +269,7 @@ some rules of the quiz
 		function darkmode(){
 			darkMode.classList.toggle('activedMode');
 			sideBarContent.style.display='none';
-			backBtn.style.display='block';
+			backBtn.classList.add('backActive');
 
 		}
 
