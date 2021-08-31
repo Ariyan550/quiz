@@ -8,6 +8,28 @@
 }
 
 
+/* display name section */
+
+.displayInput{
+	outline: none;
+	border: none;
+	padding: 10px;
+	width: 200px;
+	height: 30px;
+	border-radius: 40px;
+	color: black;
+	background-color: lightgray;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	transition: .3s;
+
+}
+
+.displayInput:focus{
+	border:1px solid purple; 
+}
+
+
+/* end  */
 .back{
 	position: absolute;
 	top: 10px;
@@ -39,7 +61,6 @@
 
 }
 
-
 .topSection{
 	display: flex;
 	justify-content: space-between;
@@ -49,8 +70,8 @@
 .sideBar{
 	width: 250px;
 	height: 450px;
-	background-color: #6c5ce7;
-	color: white;
+	background-color: #fff;
+	color: black;
 	position: absolute;
 	top: 50px;
 	right: 10px;
@@ -76,11 +97,11 @@
 
 }
 
-.darkMode{
+.darkMode, .displayText{
 	width: 230px;
 	height: 350px;
 	padding: 10px;
-	background-color: #6c5ce7;
+	background-color: #fff;
 	position: absolute;
 	top: 50px;
 	left: 10px;
@@ -96,9 +117,14 @@
 	transform: scale(1);
 }
 
+.displayText.activeDisplay{
+	opacity: 1;
+	pointer-events: auto;
+	transform: scale(1);
+}
 
 .sideBar ul li a{
-	color: white;
+	color: black;
 	text-decoration: none;
 
 }
@@ -130,10 +156,6 @@
 	padding: 10px;
 	border-radius: 0px 0px 10px 10px;
 	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); 
-	
-}
-
-@media all and (max-width:768px){
 	
 }
 
@@ -494,7 +516,9 @@ section .optionList .option:hover{
 		width: 380px;
 	}
 
-	
+	h1{
+		font-size: 20px;
+	}
 
 
 }

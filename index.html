@@ -52,7 +52,7 @@
 					<li><a href="#"><i class="fa fa-expand"></i>Resize</a></li>
 
 					<hr>
-					<li><a href="#"><i class="fa fa-edit"></i>Display YourName</a></li>
+					<li><a onclick="display()" href="#"><i class="fa fa-edit"></i>Display YourName</a></li>
 					<hr>
 					<li><a href="#"><i class="fa fa-question-circle"></i>About</a></li>
 
@@ -63,10 +63,18 @@
 				<div class="darkMode"> 
 
 					
+
+
 					<span>Dark Mode v3.0</span>
 				</div>
 
 
+					<!-- display name -->
+
+				<div class="displayText"> 
+					<input onkeyup="showinputData()" class="displayInput" type="text" placeholder="Enter Your Name">
+
+				</div>
 
 
 
@@ -93,7 +101,7 @@
 <div class="row"> 
 
 <!-- start quiz button -->
-<h1>Hello😊 Ariyan Rumi</h1>
+<h1 class="textOutput"></h1>
 <div class="startBtn"><button class="start">Start Quiz</button></div>
 
 <!-- quiz info box -->
@@ -249,8 +257,8 @@ some rules of the quiz
 		let darkMode =document.querySelector('.darkMode');
 		let sideBarContent =document.querySelector('.listContent');
 		let backBtn =document.querySelector('.back');
-
-
+		let textOutput =document.querySelector('.textOutput');
+		let displayText =document.querySelector('.displayText');
 
 		function setting(){
 			sideBar.classList.toggle('activesideBar');
@@ -258,9 +266,9 @@ some rules of the quiz
 
 		function back(){
 			darkMode.classList.remove('activedMode');
-			
 			backBtn.classList.remove('backActive');
 			sideBarContent.style.display='block';
+			displayText.classList.remove('activeDisplay');
 		}
 
 
@@ -270,11 +278,35 @@ some rules of the quiz
 			darkMode.classList.toggle('activedMode');
 			sideBarContent.style.display='none';
 			backBtn.classList.add('backActive');
+			
+		}
+
+
+		// display name
+
+		function display(){
+			sideBarContent.style.display='none';
+			displayText.classList.toggle('activeDisplay');
+			backBtn.classList.add('backActive');
 
 		}
 
 
+		function showinputData(){
+			let input=document.querySelector('.displayInput');
+			let data =input.value;
+			
 
+			if(isNaN(data)){
+			textOutput.textContent='Hello😊' + data;
+			}else{
+				
+				textOutput.textContent='Number are not allowed';
+			}
+		}
+
+
+		// end display name
 
 
 
