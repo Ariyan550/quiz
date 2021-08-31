@@ -62,10 +62,19 @@
 
 				<div class="darkMode"> 
 
+				<p>Dark Mode v3.0 <br> Enable Dark Mode And Save Your Eye. </p>
+				<div class="lineBlock"> 
+
+
+				<h4 class="donof">OFF </h4>
+
+				<label class="switch">
+ 				 <input onclick="switchBtn(this)" type="checkbox">
+  				<span class="slider round"></span>
+				</label>	
+					</div>
+
 					
-
-
-					<span>Dark Mode v3.0</span>
 				</div>
 
 
@@ -311,6 +320,26 @@ some rules of the quiz
 
 		// end display name
 
+
+		// switch SECTION
+
+		function switchBtn(chek){
+			let onof =document.querySelector('.donof');
+			let quizSection =document.querySelector('.quizSection');
+			if (chek.checked) {
+				onof.textContent='ON';
+				quizSection.classList.add('darkModeEnable');
+
+
+
+			}else{
+				onof.textContent='OFF';
+				quizSection.classList.remove('darkModeEnable');
+			}
+
+		}
+
+		// END switch SECTION
 
 
 	</script>	
