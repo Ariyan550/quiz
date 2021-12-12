@@ -97,15 +97,15 @@ resultBox.classList.add('resActive'); //show result box
 let score_text =resultBox.querySelector('.score_text')
 
 if(userScor >3){
-	let scroTag ='<span>and congrats😍 you got <p>'+userScor+'</p>out of <p>' + questions.length +'</p> </span>';
+	let scroTag ='<span>and congrats😍😍 you got <p>'+userScor+'</p>out of <p>' + questions.length +'</p> </span>';
 	score_text.innerHTML=scroTag;
 
 }else if(userScor >1){
-	let scroTag ='<span>and nice😊 you got only <p>'+userScor+'</p>out of <p>' + questions.length +'</p> </span>';
+	let scroTag ='<span>and nice😊😊 you got only <p>'+userScor+'</p>out of <p>' + questions.length +'</p> </span>';
 	score_text.innerHTML=scroTag;
 
 }else{
-	let scroTag ='<span>and sorry😢 you got only <p>'+userScor+'</p>out of <p>' + questions.length +'</p> </span>';
+	let scroTag ='<span>and sorry😢😢 you got only <p>'+userScor+'</p>out of <p>' + questions.length +'</p> </span>';
 	score_text.innerHTML=scroTag;
 
 }

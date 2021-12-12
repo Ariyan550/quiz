@@ -2,26 +2,26 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "১৯৩৫ সালে ভারত শাসন আইনে প্রাদেশিক ক্ষমতার তালিকা ছিল",
+    answer: "আইন শৃঙ্খলা",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "আইন শৃঙ্খলা",
+      "দেশরক্ষা",
+      "যোগাযোগ",
+      "মৃদু"
     ]
   },
 
 
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "১৯১৯ সালে ভারত শাসন আইনের বিরুদ্ধে ভারতীয় কংগ্রেস কোন আন্দোলনের ডাক দেয়",
+    answer: "সত্যাগ্রহ",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "স্বরাজ",
+      "ব্রিটিশ বিতরণ",
+      "অসহযোগ",
+      "সত্যাগ্রহ"
     ]
   },
 
@@ -30,13 +30,13 @@ let questions = [
 
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "১৯৩৭ সালের প্রাদেশিক নির্বাচনে বাংলা প্রদেশসমূহ আসন সংখ্যা কত",
+    answer: "২৫০",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "২৬০",
+      "২৭০",
+      "২৫০",
+      "৩০০"
     ]
   },
 
@@ -44,40 +44,76 @@ let questions = [
 
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "মুসলিম লীগের পক্ষ থেকে মোহাম্মদ আলী জিন্নাহ কত দফা দাবি পেশ করে",
+    answer: "১৪দফা",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "১৫দফা",
+      "১৪দফা",
+      "১২দফা",
+      "৬দফা"
     ]
   },
 
   
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "লাহোর প্রস্তাব কত তারিখে উত্থাপন করা হয়",
+    answer: "২৩ মার্চ",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "২১ মার্চ",
+      "২৩ মার্চ",
+      "২৮ মার্চ",
+      "২৫ মার্চ"
     ]
   },
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
+  
 
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
+
+     {
+     numb: 6,
+     question: "স্যার সলিমুল্লাহ কত সালে জন্মগ্রহণ করেন",
+     answer: "১৮৭১",
+     options: [
+       "১৮৭২",
+       "১৮৭৪",
+       "১৮৭১",
+       "১৮৬৯"
+     ]
+   },
+
+
+
+     {
+     numb: 7,
+     question: "অবিভক্ত বাংলার প্রথম মুখ্যমন্ত্রী কে",
+     answer: "শেরে বাংলা একে ফজলুল হক",
+     options: [
+       "হোসেন শহীদ সোহরাওয়ার্দী",
+       "শেরে বাংলা একে ফজলুল হক",
+       "মাওলানা আব্দুল হামিদ খান ভাসানী",
+       "দেশবন্ধু চিত্তরঞ্জন দাশ"
+     ]
+   },
+
+
+
+     {
+     numb: 8,
+     question: "স্বরাজ দল গঠন করেন কে",
+     answer: "দেশবন্ধু চিত্তরঞ্জন দাশ",
+     options: [
+       "দেশবন্ধু চিত্তরঞ্জন দাশ",
+       "মাওলানা আব্দুল হামিদ খান ভাসানী",
+       "শেরে বাংলা একে ফজলুল হক",
+       "হোসেন শহীদ সোহরাওয়ার্দী"
+     ]
+   },
+
+
+
+
+
+
+
+
 ];
